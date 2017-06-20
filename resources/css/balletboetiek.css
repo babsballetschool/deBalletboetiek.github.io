@@ -1,0 +1,246 @@
+:root {
+    --global-width: 1200px;
+    --background-color: #FFF2FF;
+    --font-color: #990000;
+    --font-family: Georgia, Times New Roman, Times, serif;
+    --font-style: italic;
+    --font-size: 130%;
+    --header-h1-size: 300%;
+    --header-h2-size: 200%;
+    --header-address-size; 150%;
+    --navigation-font-size: 100%;
+    --navigation-border-color: #FDAEB6;
+    --navigation-border-width: 2px;
+    --navigation-button-size: 80px;
+    --navigation-button-size-hover: 85px;
+    --navigation-text-shadow: 5px 5px 3px white;
+    --section-color: #000000;
+    --section-background: #FFFFFF;
+    --section-border-radius: 30px;
+    --section-border-style: solid;
+    --section-border-width: 1px;
+    --section-padding-left: 20%;
+    --section-margin-bottom: 20px;
+    --section-h1-size: 115%;
+    --section-h2:size: 105%;
+    --section-h3:size: 102%;
+    --section-min-height: 160px;
+    --section-image-space: 10px;
+    --timetable-border-color: #990000;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--font-color);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    font-style: var(--font-style);
+    max-width: var(--global-width);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header h1, header h2, header address {
+    text-align: center;
+}
+
+header h1, header h2 {
+    font-weight: bold;
+}
+
+header h1 {
+    font-size: var(--header-h1-size);
+    line-height: 0;
+}
+
+header h1::before, header h1::after {
+    content: "'";
+}
+
+header h2 {
+    font-size: var(--header-h2-size);
+}
+
+header address {
+    font-size: var(--header-address-size);
+}
+
+header address a::before, header address a::after {
+    content: "'";
+}
+
+header nav ul, footer nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    min-height: calc(var(--navigation-button-size-hover) + 5px);
+}
+
+header nav ul li.flamenco:hover a {
+    color: black;
+}
+
+header nav ul li a, footer nav ul li a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+footer nav ul {
+    justify-content: space-around;
+}
+
+header nav ul li, footer nav ul li {
+    display: inline-block;
+    width: var(--navigation-button-size);
+    height: var(--navigation-button-size);
+    list-style: none;
+    font-size: var(--navigation-font-size);
+    font-style: normal;
+    border-color: var(--navigation-border-color);
+    border-width: var(--navigation-border-width);
+    border-style: solid;
+    border-radius: calc(var(--navigation-button-size)/2);
+    text-align: center;
+    vertical-align: middle;
+    line-height: var(--navigation-button-size);
+    background-image: radial-gradient(ellipse farthest-corner at 50% 10%, white, #EFCEDB);
+    transition-property: all;
+    transition-duration: 150ms;
+}
+
+header nav ul li.flamenco:hover {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJiYWNrZ3JvdW5kIiBjeD0iNTAlIiBjeT0iMTAlIiByPSI1MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjRjdCRENGIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iI0FEMTUzQSIgLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0idXJsKCNiYWNrZ3JvdW5kKSIvPgogIDxnIGZpbGw9IndoaXRlIj4KICAgIDxlbGxpcHNlIGN4PSIxMCIgY3k9IjMwIiByeD0iNCIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSIyMCIgY3k9IjIwIiByeD0iNSIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSIyNSIgY3k9IjQ1IiByeD0iNCIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSIzOCIgY3k9IjMyIiByeD0iNCIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSI0MCIgY3k9IjEwIiByeD0iNSIgcnk9IjQiLz4KICAgIDxlbGxpcHNlIGN4PSI0MCIgY3k9IjUwIiByeD0iNCIgcnk9IjQiLz4KICAgIDxlbGxpcHNlIGN4PSI1MCIgY3k9IjE4IiByeD0iNSIgcnk9IjMiLz4gCiAgICA8ZWxsaXBzZSBjeD0iNTAiIGN5PSI0OCIgcng9IjMiIHJ5PSIzIi8+IAogICAgPGVsbGlwc2UgY3g9IjYwIiBjeT0iMzAiIHJ4PSIzIiByeT0iMyIvPgogIDwvZz4KPC9zdmc+Cg==)
+}
+
+header nav ul li:hover, footer nav ul li:hover {
+    width: var(--navigation-button-size-hover);
+    height: var(--navigation-button-size-hover);
+    border-radius: calc(var(--navigation-button-size-hover)/2);
+    text-shadow: var(--navigation-text-shadow);
+    font-size: larger;
+    line-height: var(--navigation-button-size-hover);
+}
+
+main div.where {
+    background: var(--section-background);
+    border-radius: var(--section-border-radius);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-style: var(--section-border-style);
+    border-color: var(--section-background);
+    border-width: var(--section-border-width);
+    padding-left: var(--section-border-radius);
+}
+
+main div.where span {
+    font-weight: bold;
+}
+
+main section:first-of-type {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+main section {
+    background: var(--section-background);
+    border-radius: var(--section-border-radius);
+    border-style: var(--section-border-style);
+    border-color: var(--section-background);
+    border-width: var(section-border-width);
+    padding: var(--section-border-radius);
+    padding-left: var(--section-padding-left);
+    margin-bottom: var(--section-margin-bottom);
+}
+
+main section h1 {
+    font-size: var(--section-h1-size);
+}
+
+main section h2 {
+    font-size: var(--section-h2-size);
+}
+
+main section h3 {
+    font-size: var(--section-h3-size);
+    color: black;
+}
+
+
+main section p {
+    color: var(--section-color);
+}
+
+main section a {
+    color: var(--font-color);
+}
+
+main section {
+    position: relative;
+    min-height: var(--section-min-height);
+}
+
+main section img {
+    border-radius: calc(var(--section-min-height)/2);
+    position: absolute;
+    left: var(--section-border-radius);
+    top: var(--section-border-radius);
+    max-width: var(--section-min-height);
+    max-height: var(--section-min-height);
+    min-width: var(--section-min-height);
+    max-height: var(--section-min-height);
+    width: auto;
+    height: auto;
+}
+
+main section .galleria img {
+    border-radius: 0;
+}
+
+main section img:nth-of-type(2) {
+    top: calc(var(--section-border-radius) + (2 - 1)*(var(--section-min-height) + var(--section-image-space)));
+}
+
+main section img:nth-of-type(3) {
+    top: calc(var(--section-border-radius) + (3 - 1)*(var(--section-min-height) + var(--section-image-space)));
+}
+
+main section img:nth-of-type(4) {
+    top: calc(var(--section-border-radius) + (4 - 1)*(var(--section-min-height) + var(--section-image-space)));
+}
+
+main section img:nth-of-type(5) {
+    top: calc(var(--section-border-radius) + (5 - 1)*(var(--section-min-height) + var(--section-image-space)));
+}
+
+main section img:nth-of-type(6) {
+    top: calc(var(--section-border-radius) + (6 - 1)*(var(--section-min-height) + var(--section-image-space)));
+}
+
+main section ul, main section table {
+    color: black;
+}
+
+main section table.timetable, main section table.timetable th, main section table.timetable td {
+    border-color: var(--timetable-border-color);
+    border-width: 1px;
+    border-style: solid;
+}
+
+main section table.timetable th {
+    background-color: var(--timetable-border-color);
+    color: white;
+    min-width: 7em;
+}
+
+main section table.timetable td, main section table.timetable h3, main section table.timetable p, main section table.timetable li {
+    text-align: center;
+}
+
+main section table.timetable ul {
+    list-style-type: none;
+    padding-left: 0;
+}
