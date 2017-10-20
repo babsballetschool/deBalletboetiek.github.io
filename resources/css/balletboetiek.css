@@ -11,8 +11,8 @@
     --navigation-font-size: 100%;
     --navigation-border-color: #FDAEB6;
     --navigation-border-width: 2px;
-    --navigation-button-size: 80px;
-    --navigation-button-size-hover: 85px;
+    --navigation-button-size: 95px;
+    --navigation-button-size-hover: 105px;
     --navigation-text-shadow: 5px 5px 3px white;
     --section-color: #000000;
     --section-background: #FFFFFF;
@@ -27,6 +27,7 @@
     --section-min-height: 160px;
     --section-image-space: 10px;
     --timetable-border-color: #990000;
+    --timetable-margin-left: -114px;
 }
 
 body {
@@ -81,7 +82,7 @@ header nav ul, footer nav ul {
 }
 
 header nav ul li.flamenco:hover a {
-    color: black;
+    color: white;
 }
 
 header nav ul li a, footer nav ul li a {
@@ -113,7 +114,7 @@ header nav ul li, footer nav ul li {
 }
 
 header nav ul li.flamenco:hover {
-    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjRweCIgaGVpZ2h0PSI2NHB4IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxkZWZzPgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJiYWNrZ3JvdW5kIiBjeD0iNTAlIiBjeT0iMTAlIiByPSI1MCUiPgogICAgICA8c3RvcCBvZmZzZXQ9IjUlIiBzdG9wLWNvbG9yPSIjRjdCRENGIiAvPgogICAgICA8c3RvcCBvZmZzZXQ9Ijk1JSIgc3RvcC1jb2xvcj0iI0FEMTUzQSIgLz4KICAgIDwvcmFkaWFsR3JhZGllbnQ+CiAgPC9kZWZzPgogIDxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgZmlsbD0idXJsKCNiYWNrZ3JvdW5kKSIvPgogIDxnIGZpbGw9IndoaXRlIj4KICAgIDxlbGxpcHNlIGN4PSIxMCIgY3k9IjMwIiByeD0iNCIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSIyMCIgY3k9IjIwIiByeD0iNSIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSIyNSIgY3k9IjQ1IiByeD0iNCIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSIzOCIgY3k9IjMyIiByeD0iNCIgcnk9IjMiLz4KICAgIDxlbGxpcHNlIGN4PSI0MCIgY3k9IjEwIiByeD0iNSIgcnk9IjQiLz4KICAgIDxlbGxpcHNlIGN4PSI0MCIgY3k9IjUwIiByeD0iNCIgcnk9IjQiLz4KICAgIDxlbGxpcHNlIGN4PSI1MCIgY3k9IjE4IiByeD0iNSIgcnk9IjMiLz4gCiAgICA8ZWxsaXBzZSBjeD0iNTAiIGN5PSI0OCIgcng9IjMiIHJ5PSIzIi8+IAogICAgPGVsbGlwc2UgY3g9IjYwIiBjeT0iMzAiIHJ4PSIzIiByeT0iMyIvPgogIDwvZz4KPC9zdmc+Cg==)
+    background-image: url(../image/flamenco.svg);
 }
 
 header nav ul li:hover, footer nav ul li:hover {
@@ -228,6 +229,13 @@ main section table.timetable, main section table.timetable th, main section tabl
     border-color: var(--timetable-border-color);
     border-width: 1px;
     border-style: solid;
+    margin: 0;
+}
+
+main section table.timetable {
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-left: var(--timetable-margin-left);
 }
 
 main section table.timetable th {
@@ -243,4 +251,13 @@ main section table.timetable td, main section table.timetable h3, main section t
 main section table.timetable ul {
     list-style-type: none;
     padding-left: 0;
+}
+
+main section table.timetable h3, main section table.timetable p, main section table.timetable ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+main section table.timetable tbody td {
+    font-size: 75%;
 }
