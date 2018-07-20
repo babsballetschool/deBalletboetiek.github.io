@@ -167,7 +167,6 @@ main section h2 {
 
 main section h3 {
     font-size: var(--section-h3-size);
-    color: black;
 }
 
 
@@ -260,4 +259,8 @@ main section table.timetable h3, main section table.timetable p, main section ta
 
 main section table.timetable tbody td {
     font-size: 75%;
+}
+
+main.rules section h2 {
+    text-decoration-line: underline;
 }
