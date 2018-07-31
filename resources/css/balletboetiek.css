@@ -188,12 +188,9 @@ main section img {
     position: absolute;
     left: var(--section-border-radius);
     top: var(--section-border-radius);
-    max-width: var(--section-min-height);
-    max-height: var(--section-min-height);
-    min-width: var(--section-min-height);
-    max-height: var(--section-min-height);
-    width: auto;
-    height: auto;
+    width: var(--section-min-height);
+    height: var(--section-min-height);
+    object-fit: cover;
 }
 
 main section .galleria img {
