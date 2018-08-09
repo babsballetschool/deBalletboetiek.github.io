@@ -141,12 +141,7 @@ main div.where span {
     font-weight: bold;
 }
 
-main section:first-of-type {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-}
-
-main section {
+main section, main div.balletris {
     background: var(--section-background);
     border-radius: var(--section-border-radius);
     border-style: var(--section-border-style);
@@ -155,6 +150,11 @@ main section {
     padding: var(--section-border-radius);
     padding-left: var(--section-padding-left);
     margin-bottom: var(--section-margin-bottom);
+}
+
+main section:first-of-type, main div.balletris {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
 }
 
 main section h1 {
@@ -261,3 +261,4 @@ main section table.timetable tbody td {
 main.rules section h2 {
     text-decoration-line: underline;
 }
+
