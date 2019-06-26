@@ -193,6 +193,13 @@ main section img {
     object-fit: cover;
 }
 
+main section img.inline {
+    position: relative;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+}
+
 main section .galleria img {
     border-radius: 0;
 }
