@@ -7,7 +7,7 @@
     --font-size: 130%;
     --header-h1-size: 300%;
     --header-h2-size: 200%;
-    --header-address-size; 150%;
+    --header-address-size: 150%;
     --navigation-font-size: 100%;
     --navigation-border-color: #FDAEB6;
     --navigation-border-width: 2px;
@@ -52,10 +52,6 @@ header h1, header h2 {
 header h1 {
     font-size: var(--header-h1-size);
     line-height: 0;
-}
-
-header h1::before, header h1::after {
-    content: "'";
 }
 
 header h2 {
