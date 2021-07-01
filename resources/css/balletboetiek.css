@@ -8,11 +8,12 @@
     --header-h1-size: 300%;
     --header-h2-size: 200%;
     --header-address-size: 150%;
-    --navigation-font-size: 100%;
+    --navigation-font-size: 85%;
+    --navigation-font-size-hover: 95%;
     --navigation-border-color: #FDAEB6;
     --navigation-border-width: 2px;
-    --navigation-button-size: 95px;
-    --navigation-button-size-hover: 105px;
+    --navigation-button-size: 90px;
+    --navigation-button-size-hover: 100px;
     --navigation-text-shadow: 5px 5px 3px white;
     --section-color: #000000;
     --section-background: #FFFFFF;
@@ -118,7 +119,7 @@ header nav ul li:hover, footer nav ul li:hover {
     height: var(--navigation-button-size-hover);
     border-radius: calc(var(--navigation-button-size-hover)/2);
     text-shadow: var(--navigation-text-shadow);
-    font-size: larger;
+    font-size: var(--navigation-font-size-hover);
     line-height: var(--navigation-button-size-hover);
 }
 
